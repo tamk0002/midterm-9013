@@ -1,0 +1,294 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+@import 'https://fonts.googleapis.com/css?family=Megrim|Quicksand';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Quicksand', 'Droid Sans', 'Source Sans Pro', 'Arial', sans-serif;
+    background-image: url(/midterm/midterm-9013/img/starryloop.jpg);
+    color: white;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 3rem 'Megrim','Droid Serif', 'American Typewriter', serif;
+    text-align: center;
+    background-image: url(/midterm/midterm-9013/img/galaxytitle.jpg);
+    background-position: center;
+    padding: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-shadow: 3px 3px 7px black;
+}
+h2{
+    font: bold 2.5rem 'Megrim', 'Droid Serif', 'American Typewriter', serif;
+    margin-bottom: 1rem;
+    color: honeydew;
+}
+li, p, a{
+    font: bold 1.618rem 'Quicksand', 'Droid Sans', 'Source Sans Pro', 'Arial', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Quicksand','Droid Sans Mono', 'Avenir Book', 'Arial', sans-serif;
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+nav>ul{
+    width: 100%;
+}
+nav li{
+    width: 100%;
+    list-style: none;
+}
+.mainnav li{
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 3px;
+    background-color: rgba(100%, 100%, 100%, .3);
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.3rem 'Quicksand', 'Source Sans Pro','Droid Sans', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: honeydew;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    color: aquamarine;
+}
+main{
+    width: 100%;
+    background-color: #333;
+}
+.col{
+    float: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+}
+.col img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(100%, 100%, 100%, .3);
+    padding: 1rem;
+    color: white;
+}
+footer li{
+    list-style: none;
+}
+footer li>a{
+    text-decoration: none;
+    color: honeydew;
+    font-size: 1.0rem;
+    margin: 0;
+}
+footer a:hover{
+    color: aquamarine;
+}
+footer p{
+    font-size: 1.0rem;
+}
+main p{
+    font-size: 1.0rem;
+}
+
+@media screen and (min-width:600px){
+    .wrapper{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    nav{
+        width: 90%;
+        float: left;
+        margin-left: 5%;
+    }
+    nav li{
+        width: 100%;
+    }
+    .mainnav li{
+        width: 20%;
+        float: left;
+        display: block;
+        padding: 0;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited{
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.2rem;
+    }
+    main{
+        float: left;
+        width: 90%;
+        background-color: #333;
+        margin-left: 5%;
+    }
+    .col{
+        width: 50%;
+        float: left;
+    }
+    .col img{
+        width: 60%;
+        float: left;
+        margin-right: 1rem;
+    }
+    footer{
+        width: 90%;
+        float: left;
+        display: block;
+        margin-left: 5%;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    nav{
+        margin-left: 5%;
+        padding: 0;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited{
+        font-size: 1.4rem;
+    }
+    .col{
+        padding: 1.5rem;
+    }
+    footer{
+        width: 100%;
+        margin-left: 0;
+        margin-top; 1rem;
+        text-align: left;
+    }
+    footer li{
+        float: left;
+        margin-left: 3.5%;
+    }
+    footer p{
+        margin-left: 3.5%;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2.7rem;
+    }
+    main p{
+        font-size: 1.2rem;
+    }
+    footer{
+        margin-bottom: 0;
+    }
+    footer li>a{
+        font-size: 1.2rem;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    nav{
+        width: 30%;
+        float: left;
+        margin-left: 0;
+    }
+    .mainnav li{
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited{
+        padding: 1.5rem;
+        font-size: 1.618rem;
+    }
+    main{
+        float: left;
+        width: 70%;
+        margin-left: 0;
+    }
+    .col{
+        width: 50%;
+        float: left;
+    }
+    .col img{
+        width: 55%;
+        float: left;
+        margin-right: 1rem;
+    }
+    footer{
+        float: right;
+        display: block;
+    }
+    footer li{
+        float:left;
+        margin: 1rem;
+    }
+    footer p{
+        float: left;
+        margin: 1rem;
+        padding: .45rem;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 2.618rem;
+    }
+}
