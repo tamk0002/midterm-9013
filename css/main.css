@@ -27,6 +27,7 @@ html{
     line-height: 1.6;
     font-family: 'Quicksand', 'Droid Sans', 'Source Sans Pro', 'Arial', sans-serif;
     background-image: url(https://i.ytimg.com/vi/oWA38bbmfGI/maxresdefault.jpg);
+    background-image: url(/midterm/midterm-9013/img/starryloop.jpg);
     color: white;
 }
 /*************************** 
@@ -36,6 +37,7 @@ h1 {
     font: bold 3rem 'Megrim','Droid Serif', 'American Typewriter', serif;
     text-align: center;
     background-image: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/06/galaxy-wallpapers-10.jpg);
+    background-image: url(/midterm/midterm-9013/img/galaxytitle.jpg);
     background-position: center;
     padding: 2rem;
     color: white;
